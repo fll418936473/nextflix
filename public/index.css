@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  background: black;
+}
+
+::-webkit-scrollbar {
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.header {
+  background-image: url("./background.jpg");
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.header-layer {
+  background: linear-gradient(to right, black, black 40%,  white);
+  opacity: 0.7;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  height: 600px;
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+.subheader {
+  position: absolute;
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+  top: 200px;
+  left: 100px;
+  color: white;
+  z-index: 4;
+}
+
+.subheader p {
+  font-size: 20px;
+}
+
+.header-btn {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  top: 350px;
+  left: 100px;
+  z-index: 4;
+}
+
+a:link, a:visited {
+  color: white; 
+  text-decoration: none;
+}
+
+.header-btn:hover {
+  cursor: pointer;
+}
+
+#netflix-logo {
+  position: absolute;
+  z-index: 2;
+  left: 50px;
+  top: 20px;
+  width: 180px;
+  height: 120px;
+  fill: red;
+  font-size: 60px;
+}
+
+.main-content {
+  color: white;
+  margin: 20px;
+}
+
+.row {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.row-content {
+  display: flex;
+  overflow-x: auto;
+  border-top: 1px solid lightgray;
+}
+
+.block {
+  margin: 10px;
+  padding: 5px;
+}
+
+.block button {
+  display: none;
+}
+
+.block:hover img{
+  /* background: lightskyblue; */
+  opacity: .5;
+}
+
+.block button:hover {
+  cursor: pointer;
+}
+
+.block:hover button {
+  display: block;
+}
